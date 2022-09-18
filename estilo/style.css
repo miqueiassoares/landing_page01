@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    /* PALETA DE CORES */
+    --cor01: #81089b;
+    --cor02: #dfa400;
+    --cor03: #22211f;
+    --cor04: #dfa158;
+    /* FONTES */
+    --fonte01:  'Poppins', sans-serif;
+    /* IMAGEM DE FUNDO */
+    --image: url('../imagens/background.jpg');
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background: url('../imagens/background.jpg');
+    color: whitesmoke;
+}
+
+main {
+    height: 75vh;
+    width: 100vw;
+    background-color: #752f85c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#campanha {
+    width: 550px;
+    height: 350px;
+}
+
+.h1_campanha {
+    font-size: 2.5rem;
+    font-family: var(--fonte01);
+    line-height: 30px;
+    text-transform: uppercase;
+    width: 120px;
+}
+
+.h2_campanha {
+    margin-top: 50px;
+    font-size: 2rem;
+    line-height: 40px;
+    text-transform: uppercase;
+    width: 330px;
+}
+
+#gratuito {
+    color: var(--cor02);
+}
+
+.p_campanha {
+    font-family: var(--fonte01);
+    margin-top: 30px;
+}
+
+form {
+    background: var(--cor01);
+    width: 300px;
+    height: 100%;
+    padding: 30px;
+}
+
+.titulo_form {
+    text-transform: uppercase;
+    margin: 40px 0px 10px 0px;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+label, input{
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 27px;
+    border-radius: 5px;
+    border: 0;
+}
+
+
+input:active {
+    background: #22211f;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin: 5px 0px;
+}
+
+label::after {
+    content: "*";
+}
+
+#botao {
+    background: var(--cor04);
+    cursor: pointer;
+    margin-top: 25px;
+    border: 0;
+    font-size: 1.4rem;
+    color: white;
+    font-family: var(--fonte01);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#botao:hover {
+    opacity: 0.8;
+    border: 2px solid var(--cor03);
+}
+
+footer {
+    background: var(--cor02);
+    height: 25vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid black;
+    color: black;
+    box-shadow: 0px 2px 8px black;
+}
+
+footer h1 {
+    font-size: 2.5rem;
+    width: 50px;
+    line-height: 20px;
+    font-family: var(--fonte01);
+    font-weight: lighter;
+    margin: 50px;
+    text-shadow: 0px 0px 20px black;
+}
+
+#detalhe_rodape {
+    background-color: var(--cor03);
+    height: 40px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+}
+
+@media (max-width:700px){
+    #campanha {
+        display: none;
+    }
+}
